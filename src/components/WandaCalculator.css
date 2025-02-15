@@ -1,0 +1,88 @@
+.calculator-container {
+    min-height: 100vh;
+    background: linear-gradient(to right, #6ee7b7, #3b82f6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+  
+  .calculator-box {
+    background-color: #ffffff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    padding: 32px;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .calculator-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 24px;
+    text-align: center;
+    color: #2d3748;
+  }
+  
+  .calculator-input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #cbd5e0;
+    border-radius: 12px;
+    font-size: 1.25rem;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .calculator-input:focus {
+    border-color: #38a169;
+  }
+  
+  .calculator-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #38a169;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .calculator-button:hover {
+    background-color: #2f855a;
+  }
+  
+  .ingredient-list {
+    margin-top: 24px;
+  }
+  
+  .ingredient-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #4a5568;
+  }
+  
+  .ingredient-item {
+    background-color: #f7fafc;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    color: #2d3748;
+  }
+  
+  .ingredient-name {
+    font-weight: 500;
+  }
+  
+  .ingredient-mass {
+    font-weight: bold;
+    color: #38a169;
+  }
+  

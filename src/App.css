@@ -12,6 +12,109 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.stylish-ingredients {
+  margin-top: 10px;
+  padding: 15px;
+  background: linear-gradient(135deg, #f3f3f3, #e0e0e0);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.ingredient-list-container {
+  list-style: none;
+  padding: 0;
+}
+
+.ingredient-item-stylish {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+  color: #333;
+  transition: background 0.3s;
+}
+
+.ingredient-item-stylish:hover {
+  background: #dcdcdc;
+}
+
+.ingredient-name-stylish {
+  font-size: 1.2rem;
+}
+
+.ingredient-percentage-stylish {
+  color: #007BFF;
+}
+
+.styled-select {
+  padding: 12px 15px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #6dd5ed, #2193b0);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.styled-select:hover {
+  background: linear-gradient(135deg, #2193b0, #6dd5ed);
+}
+
+.styled-select option {
+  color: #000;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .calculator-container {
+    padding: 16px;
+  }
+
+  .calculator-box {
+    padding: 20px;
+    max-width: 100%;
+    border-radius: 10px;
+  }
+
+  .calculator-title {
+    font-size: 1.5rem;
+  }
+
+  .calculator-input, .calculator-button {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .ingredient-item {
+    font-size: 1rem;
+    padding: 8px;
+  }
+
+  .styled-select {
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .calculator-title {
+    font-size: 1.3rem;
+  }
+
+  .formula-label {
+    font-size: 1rem;
+  }
+
+  .styled-select {
+    font-size: 0.9rem;
+  }
+}
 
 .App-header {
   background-color: #282c34;
