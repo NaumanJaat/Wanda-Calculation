@@ -1,0 +1,138 @@
+/* Sidebar Styles */
+.sidebar {
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease; /* Smooth transition for hiding/showing */
+  }
+  
+  .sidebar-button {
+    background-color: #444;
+    color: white;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  .sidebar-button:hover {
+    background-color: #555;
+  }
+  
+  .sidebar-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Media Query for Smaller Screens */
+  @media (max-width: 768px) {
+    .sidebar {
+      transform: translateX(-100%); /* Hide the sidebar off-screen */
+      z-index: 1000;
+    }
+  
+    .sidebar.active {
+      transform: translateX(0); /* Show the sidebar when active */
+    }
+  
+    .sidebar-button {
+      font-size: 14px; /* Adjust font size for mobile screens */
+    }
+  
+    .sidebar-title {
+      font-size: 20px; /* Adjust title font size for mobile screens */
+    }
+  
+    /* Sidebar toggle button for mobile screens */
+    .sidebar-toggle {
+      display: block;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 30px;
+      color: white;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+  }
+  
+  /* Main Content Styling */
+  .main-content {
+    margin-left: 200px; /* Keep the content offset when sidebar is visible */
+    padding: 20px;
+    transition: margin-left 0.3s ease; /* Smooth transition for main content */
+  }
+  
+  .main-content.active {
+    margin-left: 0; /* Full width when sidebar is hidden */
+  }
+  /* Sidebar.css */
+.sidebar {
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    color: white;
+    z-index: 1000;
+  }
+  
+  .sidebar-title {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .sidebar-button {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-align: left;
+  }
+  
+  .sidebar-button:hover {
+    background-color: #555;
+  }
+  
+  /* For small screens (mobile) */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: row; /* Arrange buttons horizontally */
+      justify-content: space-around; /* Spread buttons evenly */
+      background-color: #333; /* Keep sidebar background */
+    }
+  
+    .sidebar-button {
+      flex: 1; /* Make each button take equal width */
+      padding: 15px;
+      text-align: center; /* Align text to center */
+      margin: 0; /* Remove margins */
+    }
+  
+    .sidebar-title {
+      display: none; /* Hide the sidebar title on mobile */
+    }
+  }
+  

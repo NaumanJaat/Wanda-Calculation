@@ -51,7 +51,7 @@
   padding: 12px 15px;
   border: none;
   border-radius: 10px;
-  background: linear-gradient(135deg, #6dd5ed, #2193b0);
+  background: linear-gradient(135deg, #2a313a, #757a78);
   color: #fff;
   font-size: 1.1rem;
   font-weight: bold;
@@ -62,11 +62,110 @@
 }
 
 .styled-select:hover {
-  background: linear-gradient(135deg, #2193b0, #6dd5ed);
+  background: linear-gradient(to right, #757a78, #2a313a);
 }
 
 .styled-select option {
-  color: #000;
+  color: #f8f5f5;
+}
+/* Reset any margin or padding to avoid extra space at the top */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.App {
+  display: flex;
+  height: 100%;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 200px;
+  height: 100%;
+  background-color: #333;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease;
+  z-index: 999;
+}
+
+.sidebar.active {
+  transform: translateX(0);
+}
+
+.sidebar.inactive {
+  transform: translateX(-100%);
+}
+
+/* Main content */
+.main-content {
+  margin-left: 200px;
+  transition: margin-left 0.3s ease;
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.main-content.active {
+  margin-left: 0;
+}
+
+/* Sidebar Toggle Button */
+.sidebar-toggle {
+  display: none;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* Landing Page Style */
+.landing-page {
+  text-align: center;
+  margin-top: 20%;
+}
+
+.landing-page h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.landing-page p {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 250px;
+    display: none;
+  }
+  
+  .sidebar-toggle {
+    display: block;
+  }
+
+  .main-content {
+    margin-left: 0;
+  }
+
+  .sidebar.active {
+    display: block;
+  }
+
+  .sidebar.inactive {
+    display: none;
+  }
 }
 
 /* Responsive Design */
@@ -109,6 +208,7 @@
 
   .formula-label {
     font-size: 1rem;
+    color: white;
   }
 
   .styled-select {
@@ -127,6 +227,7 @@
   color: white;
 }
 
+
 .App-link {
   color: #61dafb;
 }
@@ -138,4 +239,65 @@
   to {
     transform: rotate(360deg);
   }
+}
+/* Styles for sidebar toggle */
+.sidebar-toggle {
+  display: none; /* Hide by default */
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+  font-size: 30px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Show sidebar toggle only on small screens */
+@media (max-width: 768px) {
+  .sidebar-toggle {
+    display: block; /* Show button on small screens */
+  }
+
+  .sidebar {
+    display: none; /* Sidebar hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    padding-top: 60px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .sidebar.active {
+    display: block; /* Show sidebar when active */
+    transform: translateX(0);
+  }
+
+  .main-content {
+    margin-left: 0; /* Adjust main content when sidebar is hidden */
+  }
+
+  .main-content.active {
+    margin-left: 250px; /* Adjust main content when sidebar is shown */
+  }
+}
+
+/* Styles for sidebar content */
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.sidebar li:hover {
+  background-color: #575757;
 }
