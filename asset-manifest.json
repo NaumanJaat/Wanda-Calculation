@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "/Wanda-Calculation/static/css/main.81514755.css",
-    "main.js": "/Wanda-Calculation/static/js/main.b50bc991.js",
+    "main.css": "/Wanda-Calculation/static/css/main.3debf383.css",
+    "main.js": "/Wanda-Calculation/static/js/main.d23d51fd.js",
+    "static/js/453.8ae07b36.chunk.js": "/Wanda-Calculation/static/js/453.8ae07b36.chunk.js",
     "index.html": "/Wanda-Calculation/index.html",
-    "main.81514755.css.map": "/Wanda-Calculation/static/css/main.81514755.css.map",
-    "main.b50bc991.js.map": "/Wanda-Calculation/static/js/main.b50bc991.js.map"
+    "main.3debf383.css.map": "/Wanda-Calculation/static/css/main.3debf383.css.map",
+    "main.d23d51fd.js.map": "/Wanda-Calculation/static/js/main.d23d51fd.js.map",
+    "453.8ae07b36.chunk.js.map": "/Wanda-Calculation/static/js/453.8ae07b36.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.81514755.css",
-    "static/js/main.b50bc991.js"
+    "static/css/main.3debf383.css",
+    "static/js/main.d23d51fd.js"
   ]
 }
