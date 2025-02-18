@@ -35,56 +35,98 @@ function App() {
         { name: 'Wheat', percentage: 40 },
         { name: 'Chokar', percentage: 10 },
         { name: 'Sheera', percentage: 5 }
+      ],
+      F4: [
+        { name: 'Makai', percentage: 20 },
+        { name: 'Canola Meal', percentage: 25 },
+        { name: 'Binola Khal', percentage: 30 },
+        { name: 'Chokar', percentage: 15 },
+        { name: 'Mineral Mixture & Salt', percentage: 5 },
+        { name: 'Urea (Controlled)', percentage: 5 }
+      ],
+      F5: [
+        { name: 'Makai', percentage: 25 },
+        { name: 'Canola Meal', percentage: 20 },
+        { name: 'Binola Khal', percentage: 25 },
+        { name: 'Chokar', percentage: 20 },
+        { name: 'Molasses', percentage: 5 },
+        { name: 'Mineral Mixture & Salt', percentage: 5 }
+      ],
+      F6: [
+        { name: 'Makai', percentage: 30 },
+        { name: 'Canola Meal', percentage: 15 },
+        { name: 'Binola Khal', percentage: 20 },
+        { name: 'Chokar', percentage: 25 },
+        { name: 'Soybean Meal', percentage: 5 },
+        { name: 'Mineral Mixture & Salt', percentage: 5 }
       ]
     },
     'Milking Animals': {
       F1: [
-        { name: 'Canola', percentage: 30 },
-        { name: 'Soyabeen', percentage: 20 },
-        { name: 'Maize', percentage: 25 },
-        { name: 'Wheat', percentage: 15 },
-        { name: 'Chokar', percentage: 10 }
+        { name: 'Makai', percentage: 30 },
+        { name: 'Canola Meal', percentage: 30 },
+        { name: 'Binola Khal', percentage: 20 },
+        { name: 'Chokar', percentage: 10 },
+        { name: 'Soybean Meal', percentage: 5 },
+        { name: 'Mineral Mixture & Salt', percentage: 5 }
       ],
       F2: [
-        { name: 'Maize', percentage: 40 },
-        { name: 'Wheat', percentage: 30 },
-        { name: 'Canola', percentage: 10 },
-        { name: 'Soyabeen', percentage: 10 },
-        { name: 'Rice Polish', percentage: 5 },
-        { name: 'Sheera', percentage: 5 }
+        { name: 'Makai', percentage: 35 },
+        { name: 'Canola Meal', percentage: 25 },
+        { name: 'Binola Khal', percentage: 15 },
+        { name: 'Chokar', percentage: 10 },
+        { name: 'Molasses', percentage: 10 },
+        { name: 'Mineral Mixture & Salt', percentage: 5 }
       ],
       F3: [
-        { name: 'Chokar', percentage: 25 },
-        { name: 'Wheat', percentage: 30 },
-        { name: 'Soyabeen', percentage: 25 },
-        { name: 'Maize', percentage: 10 },
-        { name: 'Rice Polish', percentage: 5 },
-        { name: 'Canola', percentage: 5 }
+        { name: 'Makai', percentage: 40 },
+        { name: 'Canola Meal', percentage: 20 },
+        { name: 'Soybean Meal', percentage: 15 },
+        { name: 'Binola Khal', percentage: 10 },
+        { name: 'Chokar', percentage: 10 },
+        { name: 'Mineral Mixture & Salt', percentage: 5 }
+      ],
+      F4: [
+        { name: 'Makai', percentage: 25 },
+        { name: 'Chokar', percentage: 35 },
+        { name: 'Canola Meal', percentage: 20 },
+        { name: 'Binola Khal', percentage: 10 },
+        { name: 'Mineral Mixture & Salt', percentage: 5 },
+        { name: 'Urea (Controlled)', percentage: 5 }
       ]
     },
     'Heifer': {
       F1: [
-        { name: 'Canola', percentage: 30 },
-        { name: 'Maize', percentage: 10 },
-        { name: 'Wheat', percentage: 50 },
-        { name: 'Chokar', percentage: 5 },
-        { name: 'Sheera', percentage: 5 }
+        { name: 'Makai', percentage: 35 },
+        { name: 'Canola Meal', percentage: 25 },
+        { name: 'Binola Khal', percentage: 15 },
+        { name: 'Chokar', percentage: 15 },
+        { name: 'Soybean Meal', percentage: 5 },
+        { name: 'Mineral Mixture & Salt', percentage: 5 }
       ],
       F2: [
-        { name: 'Maize', percentage: 35 },
-        { name: 'Soyabeen', percentage: 25 },
-        { name: 'Canola', percentage: 15 },
-        { name: 'Wheat', percentage: 15 },
-        { name: 'Rice Polish', percentage: 5 },
-        { name: 'Chokar', percentage: 5 }
+        { name: 'Makai', percentage: 40 },
+        { name: 'Canola Meal', percentage: 20 },
+        { name: 'Binola Khal', percentage: 10 },
+        { name: 'Chokar', percentage: 15 },
+        { name: 'Molasses', percentage: 5 },
+        { name: 'Mineral Mixture & Salt', percentage: 5 }
       ],
       F3: [
+        { name: 'Makai', percentage: 30 },
+        { name: 'Canola Meal', percentage: 30 },
+        { name: 'Soybean Meal', percentage: 15 },
+        { name: 'Binola Khal', percentage: 10 },
+        { name: 'Chokar', percentage: 10 },
+        { name: 'Mineral Mixture & Salt', percentage: 5 }
+      ],
+      F4: [
+        { name: 'Makai', percentage: 25 },
         { name: 'Chokar', percentage: 30 },
-        { name: 'Soyabeen', percentage: 20 },
-        { name: 'Maize', percentage: 25 },
-        { name: 'Wheat', percentage: 15 },
-        { name: 'Rice Polish', percentage: 5 },
-        { name: 'Sheera', percentage: 5 }
+        { name: 'Canola Meal', percentage: 20 },
+        { name: 'Binola Khal', percentage: 15 },
+        { name: 'Mineral Mixture & Salt', percentage: 5 },
+        { name: 'Urea (Controlled)', percentage: 5 }
       ]
     }
   };
@@ -125,7 +167,7 @@ function App() {
       
       <div className={`main-content ${sidebarActive ? 'active' : ''}`}>
         {/* Landing Page Message */}
-        {!selectedCategory && (
+        {!selectedCategory && !isCreateFormula && (
           <div className="landing-page" style={{color: 'white'}}>
             <h1>Welcome To Wanda Mass Calculator</h1>
             <p style={{color: 'white'}}>Select a category from the sidebar to start.</p>
@@ -163,7 +205,8 @@ function App() {
           )
         )}
 
-        {selectedCategory && selectedFormula && (
+        {/* Only show ingredients if not in create formula mode */}
+        {!isCreateFormula && selectedCategory && selectedFormula && (
           <div className="ingredient stylish-ingredients">
             <h3 className="ingredients-title">Ingredients for {selectedFormula}</h3>
             <ul className="ingredient-list-container">

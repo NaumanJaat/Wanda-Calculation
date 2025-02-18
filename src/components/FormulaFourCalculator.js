@@ -29,7 +29,7 @@ const FormulaFourCalculator = () => {
   return (
     <div className="calculator-container">
       <div className="calculator-box">
-        <h1 className="calculator-title">Wanda Mass Calculator - Formula 4</h1>
+        <h1 className="calculator-title">Wanda Mass Calculator </h1>
         <input
           type="number"
           placeholder="Enter total mass in kg"
