@@ -58,6 +58,7 @@
   
   .ingredient-list {
     margin-top: 24px;
+    
   }
   
   .ingredient-title {
@@ -69,17 +70,18 @@
   
   .ingredient-item {
     background-color: #f7fafc;
-    padding: 12px;
+    padding: 0px;
     border-radius: 10px;
     margin-bottom: 8px;
     display: flex;
     justify-content: space-between;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #2d3748;
   }
   
   .ingredient-name {
-    font-weight: 500;
+    font-weight: 400;
+    padding-right: 15px;
   }
   
   .ingredient-mass {
