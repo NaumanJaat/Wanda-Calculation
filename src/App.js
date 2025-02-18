@@ -159,14 +159,11 @@ function App() {
 
   return (
     <div className="App">
-      {/* Sidebar Toggle Button, visible only on small screens */}
       <button className="sidebar-toggle" onClick={toggleSidebar}>☰</button>
 
-      {/* Sidebar */}
       <Sidebar onSelectCategory={handleCategorySelect} onCreateFormula={handleCreateFormulaClick} isActive={sidebarActive} />
-      
+
       <div className={`main-content ${sidebarActive ? 'active' : ''}`}>
-        {/* Landing Page Message */}
         {!selectedCategory && !isCreateFormula && (
           <div className="landing-page" style={{color: 'white'}}>
             <h1>Welcome To Wanda Mass Calculator</h1>
@@ -199,13 +196,12 @@ function App() {
             <>
               <WandaCalculator
                 selectedFormula={selectedFormula}
-                formulas={formulas[selectedCategory]}
+                formulas={formulas[selectedCategory]} // Pass the entire formula object for the selected category
               />
             </>
           )
         )}
 
-        {/* Only show ingredients if not in create formula mode */}
         {!isCreateFormula && selectedCategory && selectedFormula && (
           <div className="ingredient stylish-ingredients">
             <h3 className="ingredients-title">Ingredients for {selectedFormula}</h3>

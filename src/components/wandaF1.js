@@ -1,25 +1,18 @@
 import React, { useState } from 'react';
 import './WandaCalculator.css';
 
-const WandaCalculator = () => {
+const WandaCalculator = ({ selectedFormula, formulas }) => {
   const [totalMass, setTotalMass] = useState('');
   const [ingredients, setIngredients] = useState([]);
 
-  const ingredientPercentages = [
-    { name: 'Canola', percentage: 35 },
-    { name: 'Maize', percentage: 5 },
-    { name: 'Rapseed', percentage: 5 },
-    { name: 'Wheat', percentage: 40 },
-    { name: 'Chokar', percentage: 10 },
-    { name: 'Sheera', percentage: 5 }
-  ];
+  const ingredientPercentages = formulas[selectedFormula] || [];
 
   const calculateIngredients = () => {
     if (!totalMass || isNaN(totalMass)) return;
     const mass = parseFloat(totalMass);
-    const calculated = ingredientPercentages.map(ing => ({
+    const calculated = ingredientPercentages.map((ing) => ({
       ...ing,
-      mass: ((ing.percentage / 100) * mass).toFixed(2)
+      mass: ((ing.percentage / 100) * mass).toFixed(2),
     }));
     setIngredients(calculated);
   };
@@ -35,10 +28,7 @@ const WandaCalculator = () => {
           onChange={(e) => setTotalMass(e.target.value)}
           className="calculator-input"
         />
-        <button
-          onClick={calculateIngredients}
-          className="calculator-button"
-        >
+        <button onClick={calculateIngredients} className="calculator-button">
           Calculate
         </button>
 
