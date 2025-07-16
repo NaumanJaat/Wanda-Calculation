@@ -1,0 +1,136 @@
+/* Sidebar Styles */
+.sidebar {
+  width: 280px;
+  height: 100vh;
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(20px);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 24px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease;
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.sidebar.active {
+  transform: translateX(0);
+}
+
+.sidebar.inactive {
+  transform: translateX(-100%);
+}
+
+/* Sidebar Header */
+.sidebar-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+  text-align: center;
+  color: #f1f5f9;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Sidebar Buttons */
+.sidebar-button {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #f1f5f9;
+  padding: 16px 20px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: left;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sidebar-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateX(4px);
+}
+
+.sidebar-button:active {
+  transform: translateX(2px);
+}
+
+/* Button Icons */
+.sidebar-button::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #64748b;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.sidebar-button:hover::before {
+  background: #94a3b8;
+  transform: scale(1.2);
+}
+
+/* Create Formula Button Special Styling */
+.sidebar-button:last-child {
+  background: rgba(34, 197, 94, 0.1);
+  border-color: rgba(34, 197, 94, 0.3);
+  color: #86efac;
+  margin-top: 20px;
+}
+
+.sidebar-button:last-child:hover {
+  background: rgba(34, 197, 94, 0.2);
+  border-color: rgba(34, 197, 94, 0.4);
+}
+
+.sidebar-button:last-child::before {
+  background: #22c55e;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 280px;
+    transform: translateX(-100%);
+  }
+
+  .sidebar.active {
+    transform: translateX(0);
+  }
+
+  .sidebar-button {
+    padding: 14px 18px;
+    font-size: 0.95rem;
+  }
+
+  .sidebar-title {
+    font-size: 1.5rem;
+    margin-bottom: 24px;
+  }
+}
+
+/* Scrollbar for sidebar */
+.sidebar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
